@@ -1,6 +1,7 @@
 <template>
   <div>
-      home
+      main
+      <router-view/>
   </div>
 </template>
 
