@@ -4,9 +4,12 @@ import router from './router'
 import store from './store'
 import less from 'less'
 Vue.use(less)
+// 字体图标库
+import '/src/assets/font-awesome-4.7.0/css/font-awesome.min.css';
 
-//全局样式
-import './css/common.less'
+
+
+import './css/style.less'
 
 Vue.config.productionTip = false
 

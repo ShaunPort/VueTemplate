@@ -26,4 +26,26 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 1.   基础布局
 2.   NAVBAR导航栏
-3.   
+3.   栅格系统
+3.   CARD
+
+
+
+## 更新日志
+
+2022-5-4
+
+1.   初始化项目
+
+2.   色调和基本样式的确定
+
+3.   NAVBAR响应式布局
+
+     1.   Collapse 的动态显示隐藏
+     2.   NAVBAR图标仍然存在bug
+
+4.   字体图标库的导入
+
+5.   less环境配置和全局变量设置
+
+     
