@@ -25,13 +25,20 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 完成进度
 
 1.   基础布局
-2.   NAVBAR导航栏
+2.   ~~NAVBAR导航栏~~
 3.   栅格系统
 3.   CARD
 
 
 
 ## 更新日志
+
+2022-5-9
+
+1.   修复之前NAVBAR菜单图标存在的bug：手机端不显示菜单图标
+2.   完成了手机端菜单点击显示效果
+
+
 
 2022-5-4
 
@@ -42,7 +49,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3.   NAVBAR响应式布局
 
      1.   Collapse 的动态显示隐藏
-     2.   NAVBAR图标仍然存在bug
+     2.   手机端NAVBAR菜单图标仍然存在bug
 
 4.   字体图标库的导入
 

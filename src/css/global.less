@@ -3,3 +3,24 @@
 @small: ~'only screen and (max-width:960px)';
 @medium: ~'only screen and (min-width:960px)';
 @big: 'only screen and (min-width:1200px)';
+
+@media @small{
+    .container{
+        width:90%;
+        margin:0 auto;
+    }
+}
+
+@media @medium{
+    .container{
+        width:85%;
+        margin:0 auto;
+    }
+}
+
+@media @big{
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
