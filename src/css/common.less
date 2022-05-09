@@ -11,3 +11,15 @@ a{
 ul{
     list-style: none;
 }
+
+//栅格
+.grid-row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.8rem;
+}
+each(range(12),{
+    .col-@{value}{
+        grid-column: span @value;
+    }
+});

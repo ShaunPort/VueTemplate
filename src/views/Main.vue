@@ -2,7 +2,7 @@
 @import url(../css/global.less);
 
 header {
-    user-select:none;
+    user-select: none;
     border-bottom: solid 5px #a29bfe;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     .navbar {
@@ -37,7 +37,7 @@ header {
                 a {
                     border: 0.18rem solid #a29bfe;
                     border-radius: 0.4rem;
-                    padding: 0.2rem .8rem;
+                    padding: 0.2rem 0.8rem;
                     color: #a29bfe;
                     &.form-gb {
                         background: #a29bfe;
@@ -57,6 +57,7 @@ header {
 }
 
 @media @small {
+
     header {
         .navbar {
             flex-flow: row wrap;
@@ -65,9 +66,14 @@ header {
                 margin-left: auto;
                 font-size: 1.2rem;
                 border: solid 1px #ddd;
-                padding: 0.1rem 0.6rem;
+                padding: 0.2rem 0.6rem;
                 color: #555;
                 cursor: pointer;
+                & + input:checked {
+                    & + .collapse {
+                        display: block;
+                    }
+                }
             }
             .collapse {
                 display: none;
@@ -82,24 +88,15 @@ header {
                     }
                 }
             }
-            label {
-                & + input:checked {
-                    & + .collapse {
-                        display: block;
-                    }
-                }
-            }
         }
     }
 }
 @media @medium {
-    header {
-        .navbar {
-        }
-    }
+
 }
 
-@media big {
+@media @big {
+
 }
 </style>
 
