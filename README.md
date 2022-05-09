@@ -29,13 +29,21 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3.   ~~栅格系统~~
 3.   ~~CARD~~
 3.   ~~group-list~~
-3.   bm组件控间距
+3.   ~~bm组件控间距~~
+3.   编写组件使用手册
 3.   页码组件
 3.   整理并组件化
 
 
 
 ## 更新日志
+
+2022-5-10 00:59
+
+1.   完成bm控间距组件
+2.   CARD组件化
+
+
 
 2022-5-9 16:34
 

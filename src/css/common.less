@@ -23,3 +23,14 @@ each(range(12),{
         grid-column: span @value;
     }
 });
+
+
+//控制距离类
+each(range(5),{
+    .mb-@{value}{
+        margin-bottom: @value*1rem;
+    }
+    .mt-@{value}{
+        margin-top: @value*1rem;
+    }
+})

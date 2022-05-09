@@ -102,7 +102,7 @@ header {
 
 <template>
     <div>
-        <header>
+        <header class="mb-3">
             <div class="container">
                 <div class="navbar">
                     <a href="" class="logo">Templete</a>
