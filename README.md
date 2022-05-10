@@ -38,6 +38,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 更新日志
 
+2022-5-10 22:39
+
+1.   完成List组件
+2.   分离当前Page组件
+
+
+
 2022-5-10 00:59
 
 1.   完成bm控间距组件

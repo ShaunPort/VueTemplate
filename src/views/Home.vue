@@ -7,39 +7,15 @@
                         <h2>最新更新</h2>
                     </template>
 
-                    <ul class="list-group">
-                        <li>
-                            <a href="">使用margin自动撑满空间技巧</a>
-                            <span>2022-5-9</span>
-                        </li>
-                        <li>
-                            <a href="">使用margin自动撑满空间技巧</a>
-                            <span>2022-5-9</span>
-                        </li>
-                        <li>
-                            <a href="">使用margin自动撑满空间技巧</a>
-                            <span>2022-5-9</span>
-                        </li>
-                        <li>
-                            <a href="">使用margin自动撑满空间技巧</a>
-                            <span>2022-5-9</span>
-                        </li>
-                        <li>
-                            <a href="">使用margin自动撑满空间技巧</a>
-                            <span>2022-5-9</span>
-                        </li>
-                    </ul>
+                    <List v-bind:items="content">
+                        <template v-slot:item="{item}">
+                            <a href="">{{item.title}}</a>
+                            <span>{{item.date}}</span>
+                        </template>
+                    </List>
 
                     <template #footer>
-                        <div class="page">
-                            <a href="">&lt;</a>
-                            <a href="">1</a>
-                            <a href="">2</a>
-                            <a href="" class="current">3</a>
-                            <a href="">4</a>
-                            <a href="">5</a>
-                            <a href="">&gt;</a>
-                        </div>
+                        <Page></Page>
                     </template>
                 </Card>
             </div>
@@ -54,55 +30,30 @@
 </template>
 
 <script>
-import Card from "/src/component/Card";
+import Card from '/src/component/Card'
+import Page from '/src/component/Page'
+import List from '/src/component/List'
 export default {
-    components: { Card },
+    components: { Card,Page,List },
+    data:function(){
+        return {
+            content:[
+                {title:'使用margin自动撑满空间',
+                date:'2022-5-9'},
+                {title:'使用margin自动撑满空间技巧',
+                date:'2022-5-10'},
+                {title:'使用margin自动撑满空间技巧',
+                date:'2022-5-11'},
+                {title:'使用margin自动撑满空间技巧',
+                date:'2022-4-9'},
+                {title:'使用margin自动撑满空间技巧',
+                date:'2022-4-9'},
+            ]
+        }
+    }
 };
 </script>
 
 <style lang="less" scoped>
 @import url(../css/global.less);
-.page {
-    display: flex;
-    a {
-        display: block;
-        padding: 0.3rem 0.8rem;
-        border: solid 1px #ddd;
-        margin-left: -1px;
-        color: #555;
-        &:first-child {
-            border-top-left-radius: 0.3rem;
-            border-bottom-left-radius: 0.3rem;
-        }
-        &:last-child {
-            border-top-right-radius: 0.3rem;
-            border-bottom-right-radius: 0.3rem;
-        }
-        &.current {
-            border: solid 1px #a29bfe;
-            background: #a29bfe;
-            color: #fff;
-        }
-    }
-}
-
-.list-group {
-    li {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.8rem 0;
-        border-bottom: solid 1px #ddd;
-        font-size: 0.8rem;
-        &:last-child {
-            border-bottom: none;
-        }
-        a {
-            color: #777;
-        }
-        span {
-            font-size: 0.5rem;
-            color: #888;
-        }
-    }
-}
 </style>
